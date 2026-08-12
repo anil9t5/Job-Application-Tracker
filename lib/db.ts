@@ -47,5 +47,7 @@ async function connectDB() {
 
   return cached.conn;
 }
+// humalabsnepal_db_user
+// waRNNJal8TMOLJ53
 
 export default connectDB;
