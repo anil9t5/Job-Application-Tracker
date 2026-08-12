@@ -6,6 +6,7 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuLabel,
+  DropdownMenuGroup,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import SignOutButton from "./sign-out-btn";
@@ -46,13 +47,15 @@ export default function Navbar() {
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
-                  <DropdownMenuLabel>
-                    <div>
-                      <p>{session.user.name}</p>
-                      <p>{session.user.email}</p>
-                    </div>
-                  </DropdownMenuLabel>
-                  <SignOutButton />
+                  <DropdownMenuGroup>
+                    <DropdownMenuLabel>
+                      <div>
+                        <p>{session.user.name}</p>
+                        <p>{session.user.email}</p>
+                      </div>
+                    </DropdownMenuLabel>
+                    <SignOutButton />
+                  </DropdownMenuGroup>
                 </DropdownMenuContent>
               </DropdownMenu>
             </>
